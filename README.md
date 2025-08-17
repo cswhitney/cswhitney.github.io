@@ -19,7 +19,7 @@
 
   <main>
     <section id="about">
-      <h2>About Me</h2>
+      <h2>About C.S. Whitney Engineering</h2>
       <p>A brief introduction about yourself or your site.</p>
     </section>
 
