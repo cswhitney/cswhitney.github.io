@@ -1,57 +1,122 @@
-.site-title {
-  display: none;
+/* styles.css */
+
+body, h1, h2, p, form {
+  margin: 0;
+  padding: 0;
 }
 
-/* Center the form on the page */
 body {
   font-family: Arial, sans-serif;
   background-color: #f8f8f8;
-  margin: 0;
-  padding: 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
-/* Style the form */
+header {
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 2rem;
+}
+
+nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #0077cc;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.contact-info {
+  background: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 2rem;
+  color: #444;
+}
+
 form {
   background-color: white;
-  padding: 30px;
+  padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   width: 100%;
   max-width: 400px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
-/* Label styling */
 label {
   font-weight: bold;
+  color: #222;
 }
 
-/* Input, textarea, and button styling */
-input,
-textarea,
-button {
-  font-size: 16px;
+input, textarea {
   padding: 10px;
+  font-size: 1rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 5px;
   width: 100%;
   box-sizing: border-box;
+  resize: vertical;
 }
 
-/* Button styling */
 button {
-  background-color: #007BFF;
+  background-color: #0077cc;
   color: white;
   border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #005fa3;
+}
+
+h2 {
+  max-width: 400px;
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+p {
+  max-width: 400px;
+  color: #555;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.meeting-link {
+  display: inline-block;
+  background-color: #0077cc;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.meeting-link:hover {
+  background-color: #005fa3;
 }
