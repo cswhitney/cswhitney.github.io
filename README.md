@@ -19,8 +19,7 @@
 
   <main>
     <section id="about">
-      <h2>About Us</h2>
-      <p>Welcome to C.S. Whitney Engineering. We specialize in innovative, client-focused engineering solutions for a sustainable future.</p>
+      <p>Specializing in multi-scale engineering research and design, we are founded on the belief that strong client relationships drive goal-oriented innovation. With streamlined workflows and a commitment to purposeful solutions, we believe great engineering is key to a successful and sustainable future.</p>
     </section>
 
     <!-- You could remove this section if the new projects.html will host all projects -->
