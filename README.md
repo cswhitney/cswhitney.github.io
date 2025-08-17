@@ -8,10 +8,11 @@
   <header>
     <h1>C.S. Whitney Engineering</h1>
     <nav>
-      <a href="#about">About</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
       <a href="projects.html">Projects</a> <!-- Goes to a new page -->
-      <a href="#testimonials">Testimonials</a> <!-- New section -->
-      <a href="#contact">Contact</a>
+      <a href="testimonials.html">Testimonials</a> <!-- New section -->
+      <a href="contact.html">Contact</a>
       <a href="assets/CV_C.S.Whitney.pdf" download>Download CV</a> <!-- CV link -->
     </nav>
   </header>
