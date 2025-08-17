@@ -48,7 +48,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 C.S. Whitney. Built with ♥</p>
+    <p>&copy; 2025 C.S. Whitney. Where Engineering Meets Thoughtful Design. </p>
   </footer>
 </body>
 </html>
