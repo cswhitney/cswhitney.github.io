@@ -17,3 +17,38 @@
       <a href="assets/CV_C.S.Whitney.pdf" download>Download CV</a> <!-- CV link -->
     </nav>
   </header>
+
+<body>
+  <h1>Contact Us</h1>
+
+  <div class="contact-info">
+    <p><strong>Email:</strong> <a href="mailto:chris@cswhitney.com">chris@cswhitney.com</a></p>
+    <p><strong>Phone:</strong> (123) 456-7890</p>
+    <p><strong>Location:</strong> Boston, MA</p>
+  </div>
+
+  <form action="mailto:chris@cswhitney.com" method="POST" enctype="text/plain">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <h2>Request a Meeting</h2>
+  <p>Click below to request a meeting using Google Calendar:</p>
+  <a
+    class="meeting-link"
+    href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Meeting+with+C.S.+Whitney+Engineering&details=Let's+talk+about+your+project.&location=Online&dates="
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Request a Meeting
+  </a>
+</body>
+</html>
