@@ -23,13 +23,6 @@
       <p>Specializing in multi-scale engineering research and design, we are founded on the belief that strong client relationships drive goal-oriented innovation. With streamlined workflows and a commitment to purposeful solutions, we believe great engineering is key to a successful and sustainable future.</p>
     </section>
 
-    <!-- You could remove this section if the new projects.html will host all projects -->
-    <!-- Optional: Short blurb about projects -->
-    <section>
-      <h2>Featured Projects</h2>
-      <p>See more on our <a href="projects.html">Projects Page</a>.</p>
-    </section>
-
     <section id="testimonials">
       <h2>Testimonials</h2>
       <blockquote>
