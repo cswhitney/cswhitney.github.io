@@ -43,7 +43,7 @@
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>Reach out to us at <a href="mailto:you@example.com">you@example.com</a>.</p>
+      <p>Reach out to us at <a href="mailto:Chris@cswhitney.com">chris@cswhitney.com</a>.</p>
     </section>
   </main>
 
