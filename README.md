@@ -23,17 +23,6 @@
       <p>Specializing in multi-scale engineering research and design, we are founded on the belief that strong client relationships drive goal-oriented innovation. With streamlined workflows and a commitment to purposeful solutions, we believe great engineering is key to a successful and sustainable future.</p>
     </section>
 
-    <section id="testimonials">
-      <h2>Testimonials</h2>
-      <blockquote>
-        <p>"Working with C.S. Whitney Engineering was seamless. Their professionalism and dedication are unmatched."</p>
-        <footer>— Happy Client A</footer>
-      </blockquote>
-      <blockquote>
-        <p>"They delivered exactly what we needed — on time and within budget."</p>
-        <footer>— Client B</footer>
-      </blockquote>
-    </section>
 
     <section id="contact">
       <h2>Contact</h2>
