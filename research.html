@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
   <title>Contact - C.S. Whitney Engineering</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
@@ -23,10 +24,11 @@
   <main class="container">
 
     <!-- Research Intro -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <section id="research-intro">
       <h2>Research</h2>
-      <div id="research-text">Loading intro...</div>
+      <div id="research-text" class="section-text markdown-body">
+        Loading intro...
+      </div>
     </section>
 
     <!-- Experimental Section -->
@@ -38,7 +40,7 @@
           <img src="assets/image2.jpg" alt="Experimental Image 2" />
           <img src="assets/image3.jpg" alt="Experimental Image 3" />
         </div>
-        <div class="section-text" id="experimental-text">
+        <div id="experimental-text" class="section-text markdown-body">
           Loading experimental content...
         </div>
       </div>
@@ -53,7 +55,7 @@
           <img src="assets/image5.jpg" alt="Modeling Image 2" />
           <img src="assets/image6.jpg" alt="Modeling Image 3" />
         </div>
-        <div class="section-text" id="modeling-text">
+        <div id="modeling-text" class="section-text markdown-body">
           Loading modeling content...
         </div>
       </div>
@@ -65,7 +67,7 @@
     <p>&copy; 2025 C.S. Whitney. Thoughtful Engineering Thoughtful Design.</p>
   </footer>
 
-  <!-- <script>
+  <script>
     function loadMarkdown(url, elementId) {
       fetch(url)
         .then(response => response.text())
@@ -78,10 +80,11 @@
         });
     }
 
-    loadMarkdown('assets/Research_Intro.md', 'research-text');
-    loadMarkdown('assets/Experimental.md', 'experimental-text');
-    loadMarkdown('assets/Modeling.md', 'modeling-text');
-  </script> -->
+    window.addEventListener('DOMContentLoaded', () => {
+      loadMarkdown('assets/Research_Intro.md', 'research-text');
+      loadMarkdown('assets/Experimental.md', 'experimental-text');
+      loadMarkdown('assets/Modeling.md', 'modeling-text');
+    });
+  </script>
 </body>
 </html>
-
