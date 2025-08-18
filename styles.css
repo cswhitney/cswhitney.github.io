@@ -1,30 +1,30 @@
-/* styles.css */
-
+/* Reset basic margins and paddings */
 body, h1, h2, p, form {
   margin: 0;
   padding: 0;
 }
 
+/* Base body styling with flexbox centering */
 body {
   font-family: Arial, sans-serif;
-  /* background-color: #f8f8f8; */
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
   padding: 2rem;
   box-sizing: border-box;
-  body {
-  background-color: hotpink;
-}
+  background-color: #f8f8f8;
 }
 
-header {
+/* Center all content in header and nav */
+header, nav {
   width: 100%;
   max-width: 900px;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
+/* Navigation links */
 nav a {
   margin-right: 1rem;
   text-decoration: none;
@@ -35,12 +35,23 @@ nav a:hover {
   text-decoration: underline;
 }
 
-h1 {
-  margin-bottom: 1rem;
+/* Headings */
+h1, h2 {
   color: #333;
   text-align: center;
+  margin-bottom: 1rem;
+  max-width: 400px;
 }
 
+/* Paragraphs */
+p {
+  color: #555;
+  text-align: center;
+  margin-bottom: 1rem;
+  max-width: 400px;
+}
+
+/* Contact info box */
 .contact-info {
   background: white;
   padding: 1rem 2rem;
@@ -50,8 +61,10 @@ h1 {
   max-width: 400px;
   margin-bottom: 2rem;
   color: #444;
+  text-align: center;
 }
 
+/* Forms */
 form {
   background-color: white;
   padding: 2rem;
@@ -65,11 +78,13 @@ form {
   margin-bottom: 2rem;
 }
 
+/* Labels */
 label {
   font-weight: bold;
   color: #222;
 }
 
+/* Input and textarea fields */
 input, textarea {
   padding: 10px;
   font-size: 1rem;
@@ -80,6 +95,7 @@ input, textarea {
   resize: vertical;
 }
 
+/* Submit button */
 button {
   background-color: #0077cc;
   color: white;
@@ -95,20 +111,7 @@ button:hover {
   background-color: #005fa3;
 }
 
-h2 {
-  max-width: 400px;
-  color: #333;
-  margin-bottom: 0.5rem;
-  text-align: center;
-}
-
-p {
-  max-width: 400px;
-  color: #555;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
+/* Meeting link styling */
 .meeting-link {
   display: inline-block;
   background-color: #0077cc;
@@ -118,8 +121,17 @@ p {
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  text-align: center;
 }
 
 .meeting-link:hover {
   background-color: #005fa3;
+}
+
+/* Generic container or section centering helper */
+section, .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
