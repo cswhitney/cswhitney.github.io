@@ -14,16 +14,30 @@
       <nav>
         <a href="about.html">About</a>
         <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="active">Contact</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <section id="about">
+    <section id="contact">
+      <h2>Contact Us</h2>
       <p>
-        Specializing in multi-scale engineering research and design, we are founded on the belief that strong client relationships drive goal-oriented innovation. With streamlined workflows and a commitment to purposeful solutions, we believe great engineering is key to a successful and sustainable future.
+        We welcome inquiries about engineering projects, partnerships, and collaborations. Please use the form below or reach out via email.
       </p>
+
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
     </section>
   </main>
 
