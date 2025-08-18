@@ -1,7 +1,10 @@
-/* styles.css */
+/* ===== Reset & Global Styles ===== */
+* {
+  box-sizing: border-box;
+}
 
-/* Set global styles */
-body {
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -9,20 +12,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
-/* Center the container and limit width */
+/* ===== Container ===== */
 .container {
   text-align: center;
   max-width: 800px;
+  width: 100%;
   padding: 2rem;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Form styling */
+/* ===== Form Styling ===== */
 form {
   display: flex;
   flex-direction: column;
@@ -30,17 +33,17 @@ form {
   margin-top: 1rem;
 }
 
-/* Inputs and textarea */
-input, textarea {
+/* ===== Inputs & Textarea ===== */
+input,
+textarea {
   padding: 0.75rem;
   font-size: 1rem;
   border-radius: 5px;
   border: 1px solid #ccc;
   width: 100%;
-  box-sizing: border-box;
 }
 
-/* Button */
+/* ===== Button Styling ===== */
 button {
   padding: 0.75rem;
   font-size: 1rem;
@@ -49,13 +52,14 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 button:hover {
   background-color: #555;
 }
 
-/* Meeting link button style */
+/* ===== Meeting Link Button ===== */
 .meeting-link {
   display: inline-block;
   margin-top: 1rem;
@@ -64,13 +68,14 @@ button:hover {
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 .meeting-link:hover {
   background-color: #004c99;
 }
 
-/* Navigation styles */
+/* ===== Navigation ===== */
 nav {
   margin: 1rem 0;
 }
