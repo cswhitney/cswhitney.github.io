@@ -22,15 +22,6 @@ body {
   min-height: 100vh;
 }
 
-/* Main content expands to fill available space */
-main.container {
-  flex: 1;
-  max-width: 1200px;
-  margin: 1rem;
-  padding: 0 10px;
-  width: 100%;
-}
-
 /* Header full width */
 header {
   width: 100%;
@@ -38,14 +29,14 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-/* Header inner layout with padding */
+/* Header inner layout centered */
 .header-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 5px 5px; /* Increased vertical padding */
+  padding: 20px 10px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center; /* Center horizontally */
 }
 
 /* Title styling */
@@ -54,14 +45,16 @@ header h1 {
   font-size: 2rem;
   color: #222;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
-/* Nav below the title, left-aligned */
+/* Nav below the title, centered */
 nav {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; /* Center nav links */
   gap: 1rem;
-  margin-bottom: 1rem; /* Adds space below nav */
+  margin-bottom: 1rem;
 }
 
 /* Navigation links */
@@ -76,7 +69,16 @@ nav a:hover {
   color: #0077cc;
 }
 
-/* Footer sticks to bottom of screen */
+/* Main content expands to fill available space */
+main.container {
+  flex: 1;
+  max-width: 1200px;
+  margin: 1rem auto;
+  padding: 0 10px;
+  width: 100%;
+}
+
+/* Footer sticks to bottom even if content is short */
 footer {
   background-color: #f4f4f4;
   text-align: center;
