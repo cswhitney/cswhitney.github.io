@@ -1,27 +1,29 @@
 /* Import font */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 
-/* Reset */
+/* Reset everything */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base styles */
+/* Body */
 body {
   font-family: Arial, sans-serif;
   background-color: #f8f8f8;
   min-height: 100vh;
 }
 
-/* Header outer: full width */
+/* Header should span full width */
 header {
-  width: 100%;
+  width: 100vw;         /* Force full viewport width */
   background-color: #f4f4f4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow-x: hidden;
 }
 
-/* Inner content: centered and limited width */
+/* Inner content stays centered */
 .header-inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -31,7 +33,7 @@ header {
   align-items: center;
 }
 
-/* Header title */
+/* Heading */
 header h1 {
   font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
@@ -55,9 +57,9 @@ nav a:hover {
   color: #0077cc;
 }
 
-/* Container for rest of page */
+/* Page content container */
 .container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 2rem auto;
+  padding: 0 40px;
 }
