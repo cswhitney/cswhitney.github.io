@@ -19,8 +19,8 @@ body {
 /* Style for header layout */
 header {
   display: flex;
-  justify-content: space-between; /* pushes h1 to left, nav to right */
-  align-items: center;            /* vertically align center */
+  justify-content: space-between; /* h1 on left, nav on right */
+  align-items: center;            /* vertically center items */
   padding: 20px;
   background-color: #f4f4f4;      /* optional: for visibility */
 }
@@ -37,7 +37,7 @@ nav a {
 nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: flex-end; /* aligns links to the right inside nav */
 }
 
 /* Paragraphs */
