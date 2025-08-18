@@ -30,8 +30,4 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 C.S. Whitney. Thoughtful Engineering Thoughtful Design. </p>
-  </footer>
-</body>
-</html>
+v
