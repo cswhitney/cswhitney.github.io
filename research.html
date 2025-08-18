@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
   <title>Contact - C.S. Whitney Engineering</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
@@ -21,19 +22,43 @@
   </header>
 
   <main class="container">
-    <section id="contact">
-      <div class="contact-content">
-        <div class="contact-images">
-          <img src="assets/image1.jpg" alt="Engineering image 1" />
-          <img src="assets/image2.jpg" alt="Engineering image 2" />
-          <img src="assets/image3.jpg" alt="Engineering image 3" />
+
+    <!-- Research Intro -->
+    <section id="research-intro">
+      <h2>Research</h2>
+      <div id="research-text">Loading intro...</div>
+    </section>
+
+    <!-- Experimental Section -->
+    <section class="research-section">
+      <h2>Experimental</h2>
+      <div class="section-content">
+        <div class="section-images">
+          <img src="assets/image1.jpg" alt="Experimental Image 1" />
+          <img src="assets/image2.jpg" alt="Experimental Image 2" />
+          <img src="assets/image3.jpg" alt="Experimental Image 3" />
         </div>
-        <div class="contact-text">
-          <h2>Research</h2>
-          <p id="research-text">Loading content...</p>
+        <div class="section-text" id="experimental-text">
+          Loading experimental content...
         </div>
       </div>
     </section>
+
+    <!-- Modeling Section -->
+    <section class="research-section">
+      <h2>Modeling</h2>
+      <div class="section-content">
+        <div class="section-images">
+          <img src="assets/image4.jpg" alt="Modeling Image 1" />
+          <img src="assets/image5.jpg" alt="Modeling Image 2" />
+          <img src="assets/image6.jpg" alt="Modeling Image 3" />
+        </div>
+        <div class="section-text" id="modeling-text">
+          Loading modeling content...
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer>
@@ -41,15 +66,22 @@
   </footer>
 
   <script>
-    fetch('assets/Research_Intro.txt')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('research-text').innerText = data;
-      })
-      .catch(error => {
-        console.error('Error loading research text:', error);
-        document.getElementById('research-text').innerText = 'Failed to load content.';
-      });
+    function loadMarkdown(url, elementId) {
+      fetch(url)
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById(elementId).innerHTML = marked.parse(data);
+        })
+        .catch(error => {
+          console.error('Error loading markdown:', error);
+          document.getElementById(elementId).innerText = 'Failed to load content.';
+        });
+    }
+
+    loadMarkdown('assets/Research_Intro.md', 'research-text');
+    loadMarkdown('assets/Experimental.md', 'experimental-text');
+    loadMarkdown('assets/Modeling.md', 'modeling-text');
   </script>
 </body>
 </html>
+
