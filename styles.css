@@ -1,49 +1,63 @@
 /* Import font */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 
-/* Reset everything */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body */
+/* Layout: make sure footer stays at bottom */
+html, body {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   font-family: Arial, sans-serif;
   background-color: #f8f8f8;
-  min-height: 100vh;
 }
 
-/* Header should span full width */
+/* Ensure main content expands to push footer down */
+main.container {
+  flex: 1;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 40px;
+}
+
+/* Header full width */
 header {
-  width: 100vw;         /* Force full viewport width */
+  width: 100%;
   background-color: #f4f4f4;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  overflow-x: hidden;
 }
 
-/* Inner content stays centered */
+/* Header inner layout */
 .header-inner {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 40px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-/* Heading */
+/* Title */
 header h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #222;
+  margin-bottom: 1rem;
 }
 
-/* Navigation links */
+/* Nav links below title, aligned left */
 nav {
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 nav a {
@@ -57,9 +71,12 @@ nav a:hover {
   color: #0077cc;
 }
 
-/* Page content container */
-.container {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 40px;
+/* Footer full width at bottom */
+footer {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+  color: #444;
+  font-size: 0.9rem;
+  width: 100%;
 }
