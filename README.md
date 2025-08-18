@@ -17,7 +17,7 @@
         <a href="projects.html">Projects</a>
         <a href="testimonials.html">Testimonials</a>
         <a href="contact.html">Contact</a>
-        <a href="assets/CV_C.S.Whitney.pdf" download>Download CV</a>
+        <a href="about" >About Us</a>
       </nav>
     </header>
 

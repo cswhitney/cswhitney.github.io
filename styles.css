@@ -8,24 +8,27 @@
   box-sizing: border-box;
 }
 
-/* Layout: make sure footer stays at bottom */
+/* Ensure full height layout */
 html, body {
   height: 100%;
 }
 
+/* Flexbox layout: body fills screen, main grows, footer at bottom */
 body {
   display: flex;
   flex-direction: column;
   font-family: Arial, sans-serif;
   background-color: #f8f8f8;
+  min-height: 100vh;
 }
 
-/* Ensure main content expands to push footer down */
+/* Main content expands to fill available space */
 main.container {
   flex: 1;
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 40px;
+  width: 100%;
 }
 
 /* Header full width */
@@ -45,21 +48,22 @@ header {
   align-items: flex-start;
 }
 
-/* Title */
+/* Title styling */
 header h1 {
   font-family: 'Playfair Display', serif;
   font-size: 2rem;
   color: #222;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem; /* Increased space below title */
 }
 
-/* Nav links below title, aligned left */
+/* Nav below the title, left-aligned */
 nav {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
+/* Navigation links */
 nav a {
   text-decoration: none;
   color: #333;
@@ -71,7 +75,7 @@ nav a:hover {
   color: #0077cc;
 }
 
-/* Footer full width at bottom */
+/* Footer sticks to bottom of screen */
 footer {
   background-color: #f4f4f4;
   text-align: center;
