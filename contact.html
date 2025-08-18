@@ -22,7 +22,7 @@
     </header>
 
     <main>
-      <h1>Contact Us</h1>
+      <h1>Contact Information</h1>
 
       <div class="contact-info">
         <p><strong>Email:</strong> <a href="mailto:chris@cswhitney.com">chris@cswhitney.com</a></p>
@@ -30,19 +30,23 @@
         <p><strong>Location:</strong> Chandler, Arizona</p>
       </div>
 
-        <form action="mailto:chris@cswhitney.com" method="POST" enctype="text/plain">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" required />
+   <!-- contact.html -->
+<form action="send_mail.php" method="POST" enctype="multipart/form-data">
+  <label for="name">Your Name</label>
+  <input type="text" id="name" name="name" required />
 
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" required />
+  <label for="email">Your Email</label>
+  <input type="email" id="email" name="email" required />
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
 
-        <button type="submit">Send Message</button>
-        </form>
-     
+  <label for="attachment">Attachment</label>
+  <input type="file" id="attachment" name="attachment" />
+
+  <button type="submit">Send Message</button>
+</form>
+
     </main>
   </div>
 </body>
