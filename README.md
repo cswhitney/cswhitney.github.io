@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="styles.css" />
   <title>Contact - C.S. Whitney Engineering</title>
 </head>
+
 <body>
   <div class="container">
     <header>
@@ -36,5 +37,8 @@
   <footer>
     <p>&copy; 2025 C.S. Whitney. Thoughtful Engineering Thoughtful Design. </p>
   </footer>
+</body>
+
+  </div>
 </body>
 </html>
