@@ -16,32 +16,33 @@ body {
   background-color: #f8f8f8;
 }
 
-/* Center all content in header and nav */
-header, nav {
-  width: 100%;
-  max-width: 900px;
-  margin-bottom: 2rem;
-  text-align: center;
+/* Style for header layout */
+header {
+  display: flex;
+  justify-content: space-between; /* pushes h1 to left, nav to right */
+  align-items: center;            /* vertically align center */
+  padding: 20px;
+  background-color: #f4f4f4;      /* optional: for visibility */
 }
 
-/* Navigation links */
+/* Remove default margin on h1 if needed */
+header h1 {
+  margin: 0;
+}
+
+/* Optional: style navigation links */
 nav a {
-  margin-right: 1rem;
-  margin-left: 1rem;
+  margin-left: 20px;
   text-decoration: none;
-  color: #0077cc;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Headings */
-h1, h2 {
   color: #333;
-  text-align: center;
-  margin-bottom: 1rem;
-  max-width: 400px;
+  font-weight: 500;
+}
+
+/* Make nav links wrap if screen is small */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 /* Paragraphs */
