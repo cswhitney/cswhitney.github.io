@@ -1,54 +1,50 @@
-/* Import a slightly cursive font for the header */
+/* Import font */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 
 /* Reset */
-body, h1, h2, p, form {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base styling */
+/* Base styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #f8f8f8;
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
-  padding: 2rem;
 }
 
-/* Header (full width) */
+/* Header outer: full width */
 header {
+  width: 100%;
+  background-color: #f4f4f4;
+}
+
+/* Inner content: centered and limited width */
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw; /* Ensures it spans full viewport width */
-  padding: 20px;
-  background-color: #f4f4f4;
-  position: relative;
-  box-sizing: border-box;
 }
 
-/* Slightly cursive header font */
+/* Header title */
 header h1 {
   font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
   color: #222;
-  margin: 0;
 }
 
-/* Navigation */
+/* Navigation links */
 nav {
   display: flex;
-  justify-content: space-evenly;
-  flex: 1;
-  margin-left: 40px;
+  gap: 1.5rem;
 }
 
 nav a {
-  flex: 1;
-  text-align: center;
   text-decoration: none;
   color: #333;
   font-weight: 500;
@@ -59,99 +55,9 @@ nav a:hover {
   color: #0077cc;
 }
 
-/* Content containers */
-.container, section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+/* Container for rest of page */
+.container {
   max-width: 1200px;
-  margin: 0 auto; /* Center within body */
-}
-
-/* Paragraphs */
-p {
-  color: #555;
-  text-align: center;
-  margin-bottom: 1rem;
-  max-width: 1000px;
-}
-
-/* Contact Info Box */
-.contact-info {
-  background-color: #fff;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  width: 100%;
-  max-width: 1000px;
-  margin-bottom: 2rem;
-  color: #444;
-  text-align: center;
-}
-
-/* Form Styling */
-form {
-  background-color: #fff;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  width: 100%;
-  max-width: 1000px;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-/* Form Labels */
-label {
-  font-weight: bold;
-  color: #222;
-  text-align: left;
-  width: 100%;
-}
-
-/* Input & Textarea */
-input, textarea {
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 100%;
-  resize: vertical;
-}
-
-/* Submit Button */
-button {
-  background-color: #0077cc;
-  color: white;
-  border: none;
-  padding: 12px;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #005fa3;
-}
-
-/* Meeting Link */
-.meeting-link {
-  display: inline-block;
-  background-color: #0077cc;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  text-align: center;
-  transition: background-color 0.3s ease;
-}
-
-.meeting-link:hover {
-  background-color: #005fa3;
+  margin: 0 auto;
+  padding: 2rem;
 }
