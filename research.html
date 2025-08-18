@@ -16,7 +16,6 @@
         <a href="about.html">About</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="contact.html">Contact</a>
-        
       </nav>
     </div>
   </header>
@@ -24,15 +23,14 @@
   <main class="container">
     <section id="contact">
       <div class="contact-content">
-        <div class="contact-text">
-          <h2>Contact Us</h2>
-          <p>
-            We welcome inquiries about engineering projects, partnerships, and collaborations.
-            Please use the form below or reach out via email.
-          </p>
+        <div class="contact-images">
+          <img src="assets/image1.jpg" alt="Engineering image 1" />
+          <img src="assets/image2.jpg" alt="Engineering image 2" />
+          <img src="assets/image3.jpg" alt="Engineering image 3" />
         </div>
-        <div class="contact-image">
-          <img src="your-image.jpg" alt="Engineering concept" />
+        <div class="contact-text">
+          <h2>Research</h2>
+          <p id="research-text">Loading content...</p>
         </div>
       </div>
     </section>
@@ -41,6 +39,17 @@
   <footer>
     <p>&copy; 2025 C.S. Whitney. Thoughtful Engineering Thoughtful Design.</p>
   </footer>
-</body>
 
+  <script>
+    fetch('assets/Research_Intro.txt')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('research-text').innerText = data;
+      })
+      .catch(error => {
+        console.error('Error loading research text:', error);
+        document.getElementById('research-text').innerText = 'Failed to load content.';
+      });
+  </script>
+</body>
 </html>
