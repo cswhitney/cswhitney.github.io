@@ -26,7 +26,7 @@ header, nav {
 
 /* Navigation links */
 nav a {
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
   text-decoration: none;
   color: #0077cc;
 }
@@ -67,7 +67,7 @@ p {
 /* Forms */
 form {
   background-color: white;
-  padding: 2rem;
+  /* padding: 2rem; */
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   width: 100%;
