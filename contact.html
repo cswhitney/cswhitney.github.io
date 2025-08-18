@@ -30,8 +30,8 @@
         <p><strong>Location:</strong> Phoenix, Arizona</p>
       </div>
 
-   <!-- contact.html -->
-<form action="send_mail.php" method="POST" enctype="multipart/form-data">
+<!-- contact.html -->
+<form action="send_mail.php" method="POST">
   <label for="name">Your Name</label>
   <input type="text" id="name" name="name" required />
 
@@ -40,9 +40,6 @@
 
   <label for="message">Message</label>
   <textarea id="message" name="message" rows="5" required></textarea>
-
-  <label for="attachment">Attachment</label>
-  <input type="file" id="attachment" name="attachment" />
 
   <button type="submit">Send Message</button>
 </form>
