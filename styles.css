@@ -27,7 +27,7 @@ header {
 
 /* Remove default margin on h1 if needed */
 header h1 {
-  margin: 0;
+  /* margin: 0; */
 }
 
 /* Optional: style navigation links */
