@@ -87,3 +87,12 @@ footer {
   font-size: 0.9rem;
   width: 100%;
 }
+
+/* Ensure markdown content appears as black text */
+#research-text,
+#experimental-text,
+#modeling-text {
+  color: #000; /* or use #111 for softer black */
+  text-align: justify;
+  line-height: 1.6;
+}
