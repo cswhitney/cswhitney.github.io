@@ -25,11 +25,6 @@ header {
   background-color: #f4f4f4;      /* optional: for visibility */
 }
 
-/* Remove default margin on h1 if needed */
-header h1 {
-  /* margin: 0; */
-}
-
 /* Optional: style navigation links */
 nav a {
   margin-left: 20px;
