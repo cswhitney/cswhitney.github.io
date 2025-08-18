@@ -8,56 +8,54 @@
   box-sizing: border-box;
 }
 
-/* Ensure full height layout */
+/* Base setup */
 html, body {
   height: 100%;
 }
 
-/* Flexbox layout: body fills screen, main grows, footer at bottom */
 body {
   display: flex;
   flex-direction: column;
   font-family: Arial, sans-serif;
   background-color: #f8f8f8;
+  color: #000;
   min-height: 100vh;
 }
 
-/* Header full width */
+/* Header styles */
 header {
   width: 100%;
   background-color: #f4f4f4;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
 }
 
-/* Header inner layout centered */
 .header-inner {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 10px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center horizontally */
+  align-items: center;
 }
 
-/* Title styling */
 header h1 {
   font-family: 'Playfair Display', serif;
   font-size: 2rem;
   color: #222;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
-/* Nav below the title, centered */
+/* Navigation styles */
 nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center nav links */
+  justify-content: center;
   gap: 1rem;
   margin-bottom: 1rem;
 }
 
-/* Navigation links */
 nav a {
   text-decoration: none;
   color: #333;
@@ -69,16 +67,75 @@ nav a:hover {
   color: #0077cc;
 }
 
-/* Main content expands to fill available space */
+/* Main layout */
 main.container {
   flex: 1;
   max-width: 1200px;
-  margin: 1rem auto;
-  padding: 0 10px;
+  margin: 2rem auto;
+  padding: 0 1rem;
   width: 100%;
 }
 
-/* Footer sticks to bottom even if content is short */
+/* Research intro section */
+#research-intro {
+  margin-bottom: 3rem;
+}
+
+#research-intro h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+/* Section layout */
+.research-section {
+  margin-bottom: 4rem;
+}
+
+.research-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+/* Layout for text + images */
+.section-content {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Images stacked vertically */
+.section-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+  max-width: 300px;
+}
+
+.section-images img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Markdown content area */
+.section-text,
+#research-text,
+#experimental-text,
+#modeling-text {
+  flex: 2;
+  color: #000;
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Footer */
 footer {
   background-color: #f4f4f4;
   text-align: center;
@@ -86,13 +143,4 @@ footer {
   color: #444;
   font-size: 0.9rem;
   width: 100%;
-}
-
-/* Ensure markdown content appears as black text */
-#research-text,
-#experimental-text,
-#modeling-text {
-  color: #000; /* or use #111 for softer black */
-  text-align: justify;
-  line-height: 1.6;
 }
