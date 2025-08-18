@@ -25,12 +25,26 @@ html, body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* ===== Form Styling ===== */
 form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  align-items: stretch; /* makes elements span full width */
+  gap: 1rem; /* space between fields */
   margin-top: 1rem;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
 }
 
 /* ===== Inputs & Textarea ===== */
