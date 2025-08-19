@@ -170,8 +170,10 @@ nav a.active {
   align-items: center;
   min-height: 80vh;
   background-color: transparent;
-  z-index: 0; /* NEW: brings .contact-page above its ::before */
-  background-color: transparent;
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  padding: 2rem 1rem; /* adjust as needed */
 }
 
 .contact-page::before {
