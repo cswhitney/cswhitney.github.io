@@ -68,7 +68,7 @@
           document.getElementById(elementId).innerHTML = marked.parse(data);
         })
         .catch(error => {
-          console.error('Error loading markdown:', error);
+          console.error('Error loading .txt:', error);
           document.getElementById(elementId).innerText = 'Failed to load content.';
         });
     }
