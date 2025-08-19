@@ -168,8 +168,8 @@ nav a.active {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
-  background-color: transparent;
+  height: 80vh;
+  /* background-color: transparent; */
 }
 
 .contact-page::before {
