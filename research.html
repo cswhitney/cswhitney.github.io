@@ -24,49 +24,39 @@
   </header>
 
   <main class="container">
-
     <!-- Research Intro -->
     <section id="research-intro">
-      <!-- <h2>Research</h2> -->
       <div id="research-text" class="section-text markdown-body">
         Loading intro...
       </div>
     </section>
 
-  <main class="container">
-
-    <!-- Horizontal Research Sections -->
+    <!-- Horizontal Research Cards -->
     <section class="horizontal-research">
-    <!-- Section 1 -->
-    <a href="computational.html" class="research-card">
-        <img src="assets/IL.jpg" alt="Computational Chemistry" style="object-fit: contain" />
+      <a href="computational.html" class="research-card">
+        <img src="assets/IL.jpg" alt="Computational Chemistry" />
         <h3>Computational Chemistry</h3>
         <p>(Molecular Dynamics / <em>ab-initio</em>)</p>
-    </a>
+      </a>
 
-    <!-- Section 2 -->
-    <a href="fluids.html" class="research-card">
-        <img src="assets/se.jpg" alt="Fluid/Solid Modeling" style="object-fit: contain"/>
+      <a href="fluids.html" class="research-card">
+        <img src="assets/se.jpg" alt="Fluid/Solid Modeling" />
         <h3>Fluid/Solid Modeling</h3>
         <p>(CFD / FEA)</p>
-    </a>
+      </a>
 
-    <!-- Section 3 -->
-    <a href="materials.html" class="research-card">
-        <img src="assets/exp.jpg" alt="Materials Modeling" style="object-fit: contain"/>
+      <a href="materials.html" class="research-card">
+        <img src="assets/exp.jpg" alt="Materials Modeling" />
         <h3>Experimental</h3>
         <p>(Structure / Properties)</p>
-    </a>
+      </a>
     </section>
-
-
   </main>
 
   <footer>
     <p>&copy; 2025 C.S. Whitney. Thoughtful Engineering Thoughtful Design.</p>
   </footer>
 
-  
   <script>
     function loadMarkdown(url, elementId) {
       fetch(url)
@@ -85,12 +75,9 @@
 
     window.addEventListener('DOMContentLoaded', () => {
       loadMarkdown('assets/Research_Intro.txt', 'research-text');
-      loadMarkdown('assets/Experimental.txt', 'experimental-text');
-      loadMarkdown('assets/Modeling.txt', 'modeling-text');
     });
   </script>
 
-    <!-- Highlight active nav link -->
   <script>
     const currentPage = window.location.pathname.split("/").pop() || "index.html";
     document.querySelectorAll("nav a").forEach(link => {

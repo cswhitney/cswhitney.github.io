@@ -160,3 +160,35 @@ footer {
 .text-center {
   text-align: center;
 }
+
+.horizontal-research {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.research-card {
+  flex: 1 1 250px;
+  max-width: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+  padding: 1rem;
+}
+
+.research-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.research-card:hover {
+  transform: translateY(-5px);
+}
