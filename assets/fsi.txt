@@ -1,0 +1,5 @@
+<em>Experimental Design as a Multi-modal Discovery Tool:</em> I employ experimental design methodologies to identify and correlate structurally significant features across both mechanical and chemical domains, accelerating the discovery of high-impact system properties.
+
+<em>Multiscale Modeling as a Bridging Strategy:<e/m> I use computational modeling to bridge molecular dynamics with system-level performance, encompassing mechanical behavior, electrochemical response, and system dynamics. These models are crucial for refining designs, predicting outcomes, and optimizing performance under extreme conditions.
+
+Together, these approaches enable the development of robust, multifunctional technologies that not only meet but exceed the demands of the most challenging applications—from deep space exploration to next-generation industrial systems.

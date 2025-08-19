@@ -2,19 +2,21 @@ Both industrial and scientific disciplines are rapidly evolving to meet the dema
 
 My work centers on the strategic design and integration of molecular systems into mechanical platforms, with a focus on high-performance operation in extreme thermal environments—ranging from cryogenic to ultra-high temperatures—and under multifunctional constraints. At the core of this work is molecular-level functionalization to enable and enhance system-level performance.
 
-<h2>Liquid Systems:</h2>
+<h2>Structured Liquid Systems:</h2>
 
 In the realm of liquid-phase systems, my research leverages ionic liquids as architected molecular building blocks for heterogeneous liquid–liquid microstructuring. These designer fluids exhibit multifunctionality, engineered to support the transport of energy in both thermal (as advanced heat transfer fluids) and electrochemical forms (serving as molecular electronic transducers). Through precise control of molecular architecture, these systems can be tuned for stability, responsiveness, and efficiency in extreme conditions.
 
-<h2>Soft Systems:</h2>
+<h2>Multi-funtional Composites:</h2>
 
 In soft materials and composites, my research explores multifunctionality achieved via novel chemical processing methods. This includes the development of ceramic conductive oxide thin films on non-conductive fiber reinforcements, enabling in-situ health monitoring through embedded sensing functionality. Additionally, I have integrated shape-memory polymers with mechano-chemical coupling to create adaptive, responsive materials—so-called “smarter” soft systems—for next-generation aerospace applications.
 
-<h2>Hard Systems:</h2>
+<h2>Systems-Level Design:</h2>
 
 At the hardware interface, I have led the design of fluid-mechanical devices such as the Molecular Electronic Transducer (MET), which utilizes fluid inertia to transduce signals from redox-mediated electrochemical activity. This work is specifically targeted at enduring the extreme atmospheric and thermal challenges of planetary environments like Venus, while maintaining reliable signal generation and fluid motion within the device.
 
-Across all domains of my work—liquid, soft, and hard systems—I maintain two guiding principles:
+<h2>Approach:</h2>
+
+My work across disciplines is guided by the principle that advancing innovation requires the deliberate integration of experimental inquiry and computational modeling to address gaps in understanding and develop optimal technical solutions.
 
 Experimental Design as a Multiscale Discovery Tool: I employ experimental design methodologies to identify and correlate structurally significant features across both mechanical and chemical domains, accelerating the discovery of high-impact system properties.
 
