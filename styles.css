@@ -229,6 +229,7 @@ footer {
 }
 
 /* === PORTFOLIO & PRODUCT CARDS === */
+/* === PORTFOLIO CARDS GRID === */
 .portfolio_cards,
 .productline_cards {
   display: flex;
@@ -238,39 +239,32 @@ footer {
   margin-bottom: 3rem;
 }
 
-.card-link {
-  flex: 1 1 300px;
-  max-width: 350px;
-  transition: transform 0.3s ease;
-  text-decoration: none;
-  color: inherit;
-}
-
-.card-link:hover {
-  transform: scale(1.02);
-}
-
-/* === INDIVIDUAL CARD BOXES === */
+/* === INDIVIDUAL CARD === */
 .portfolio-card,
 .product-card {
   background-color: #ffffff;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  gap: 1rem;
-  height: 100%;
+  transition: transform 0.3s ease;
 }
 
-/* === LOGO STYLING === */
+.card-link:hover .portfolio-card,
+.card-link:hover .product-card {
+  transform: scale(1.02);
+}
+
+/* === LOGO IMAGE === */
 .card-logo {
   width: 50px;
   height: auto;
-  display: block;
-  margin: 0 auto;
+  margin-bottom: 1rem;
 }
 
 /* === CARD TEXT === */
@@ -280,6 +274,7 @@ footer {
   color: #444;
   line-height: 1.5;
   font-size: 1.05rem;
+  margin-bottom: 0.5rem;
 }
 
 .portfolio-card span,
@@ -296,7 +291,8 @@ footer {
     align-items: center;
   }
 
-  .card-link {
-    max-width: 100%;
+  .portfolio-card,
+  .product-card {
+    max-width: 90%;
   }
 }
