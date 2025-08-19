@@ -169,3 +169,34 @@ footer {
   color: #444;
   font-size: 0.9rem;
 }
+.horizontal-research {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.research-card {
+  flex: 1 1 calc(33.333% - 2rem);
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: box-shadow 0.3s;
+}
+
+.research-card img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.research-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
