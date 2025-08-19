@@ -1,4 +1,4 @@
-<h3>Chris Whitney – Research Engineer | Designer | Builder</h3>
+<h2>Chris Whitney – Research Engineer | Designer | Builder</h2>
 
 My name is Chris Whitney, and I am a Research Engineer, Designer, and Builder with a diverse set of experiences that have shaped me into a dynamic, thoughtful, and innovative professional.
 
@@ -16,7 +16,7 @@ While in academia, I remained active in industry through freelance and consultin
 
 One of the most overlooked challenges in engineering is translating complex technological ideas into actionable plans for non-technical partners. My ability to communicate across disciplines and align business and engineering objectives has consistently driven project efficiency, improved outcomes, and accelerated product development cycles.
 
-<h3>Looking Ahead:</h3>
+<h2>Looking Ahead:</h2>
 I’m excited to bring my interdisciplinary expertise to future projects where innovation, clarity, and collaboration are key. I aim to support companies by integrating research-driven engineering with real-world implementation—delivering solutions that are not only technically sound but also strategically aligned with business goals.
 
 Whether it’s driving early-stage innovation, refining product design, or translating scientific insights into scalable systems, I’m passionate about helping companies succeed through thoughtful design, rigorous engineering, and clear communication.
