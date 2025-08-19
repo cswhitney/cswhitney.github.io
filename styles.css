@@ -178,11 +178,11 @@ nav a.active {
   width: 100%;
   height: 100%;
   transform: translate(-50%, -50%);
-  background-image: url('/assets/AZ_line.png'); /* double-check this path */
+  background-image: url('/assets/AZ_line.svg'); /* double-check this path */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  opacity: 0.2; /* increase to debug visibility */
+  opacity: 1; /* increase to debug visibility */
   z-index: -1;
   pointer-events: none;
 }
