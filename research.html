@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
   <title>Contact - C.S. Whitney Engineering</title>
+
+  <!-- ✅ Include marked.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
@@ -66,10 +69,14 @@
     <p>&copy; 2025 C.S. Whitney. Thoughtful Engineering Thoughtful Design.</p>
   </footer>
 
+  <!-- ✅ JavaScript loader -->
   <script>
     function loadMarkdown(url, elementId) {
       fetch(url)
-        .then(response => response.text())
+        .then(response => {
+          if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+          return response.text();
+        })
         .then(data => {
           document.getElementById(elementId).innerHTML = marked.parse(data);
         })
