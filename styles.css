@@ -170,6 +170,7 @@ nav a.active {
   align-items: center;
   min-height: 80vh;
   background-color: rgba(0, 255, 0, 0.2); /* TEMP for testing */
+  z-index: 0; /* NEW: brings .contact-page above its ::before */
   /* background-color: transparent; */
 }
 
