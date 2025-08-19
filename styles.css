@@ -1,14 +1,13 @@
 /* === IMPORT FONTS === */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 
-/* === RESET === */
+/* === RESET & BASE === */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* === BASE === */
 html, body {
   height: 100%;
   font-family: Arial, sans-serif;
@@ -25,14 +24,15 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  transition: color 0.3s ease;
 }
 
 /* === HEADER === */
 header {
   background-color: #f4f4f4;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   padding: 2rem 1rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .header-inner {
@@ -53,13 +53,11 @@ nav {
   justify-content: center;
   flex-wrap: wrap;
   gap: 1.5rem;
-  margin-top: 0.5rem;
 }
 
 nav a {
   color: #333;
   font-weight: 500;
-  transition: color 0.3s ease;
 }
 
 nav a:hover {
@@ -71,80 +69,79 @@ nav a.active {
   text-decoration: underline;
 }
 
-/* === GENERAL CONTAINER === */
+/* === MAIN CONTAINER === */
 .container {
   flex: 1;
   width: 100%;
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1rem;
-}
-
-/* === CONTACT PAGE === */
-.contact-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 80vh;
-  padding: 2rem 1rem;
-}
-
-.contact-box {
-  background-color: #f9f9f9;
-  padding: 30px 40px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
-  max-width: 500px;
-  width: 100%;
 }
 
-.contact-box h3 {
-  margin-bottom: 20px;
+/* === SECTION HEADINGS === */
+.portfolio h2,
+.productlines h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
   color: #003366;
 }
 
-.contact-box p {
-  margin: 10px 0;
-  font-size: 1.1rem;
-  color: #333;
-}
-
-/* === PORTFOLIO PAGE === */
-.portfolio-container {
-  padding: 2rem 1rem;
-}
-
-.portfolio-grid {
+/* === CARDS LAYOUT === */
+.dnd-cards,
+.pls-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
   justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
 }
 
-.portfolio-item {
-  flex: 1 1 calc(33.333% - 2rem);
-  background: #fff;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease;
+/* === BUTTON WRAPPERS === */
+.dnd-button,
+.pls-button {
+  flex: 1 1 300px;
+  max-width: 350px;
+  transition: transform 0.3s ease;
 }
 
-.portfolio-item img {
-  width: 100%;
+.dnd-button:hover,
+.pls-button:hover {
+  transform: scale(1.02);
+}
+
+/* === CARD STYLE: DND & PRODUCT === */
+.dnd,
+.testimonial {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.dnd-logo,
+.pls-logo {
+  width: 50px;
   height: auto;
-  max-height: 200px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 1rem;
 }
 
-.portfolio-item:hover {
-  transform: translateY(-5px);
+.dnd p,
+.testimonial p {
+  font-style: italic;
+  color: #444;
+  line-height: 1.5;
+}
+
+.dnd span,
+.testimonial span {
+  font-weight: bold;
+  color: #0077b6;
 }
 
 /* === FOOTER === */
@@ -161,210 +158,41 @@ footer {
   text-align: center;
 }
 
-.horizontal-research {
-  display: flex;
-  flex-direction: row;       /* ← ensures horizontal layout */
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 20px;
-  margin-top: 2rem;
-  padding: 0 1rem;
-}
-
-.research-card img {
-  width: 100%;
-  height: auto;
-  max-height: 160px; /* Add this line */
-  object-fit: cover;
-}
-
-.research-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-  margin-bottom: 1rem;
-}
-
-.research-card h3 {
-  margin: 0.5rem 0 0.2rem;
-}
-
-.research-card p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-.research-card:hover {
-  transform: translateY(-5px);
+/* === CONTACT PAGE BOX (still retained) === */
+.contact-box {
+  background-color: #fff;
+  padding: 30px 40px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-/* === .TXT Formattign === */
-.markdown-body {
-  text-align: justify;
-  line-height: 1.6;
-  padding: 1rem 0;
-}
-
-.markdown-body p {
+/* === TYPOGRAPHY === */
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
   margin-bottom: 1rem;
+  color: #003366;
+}
+
+p {
   font-size: 1.05rem;
   color: #333;
 }
 
-.markdown-body h1,
-.markdown-body h2,
-.markdown-body h3 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  color: #003366;
-}
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .dnd-cards,
+  .pls-cards {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.markdown-body ul,
-.markdown-body ol {
-  margin-left: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-/* === HOME PAGE === */
-.home-container {
-  flex: 1;
-  width: 100%;
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-  text-align: center;
-}
-
-.hero {
-  background-color: #e6f2ff;
-  padding: 4rem 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  margin-bottom: 3rem;
-}
-
-.slogan {
-  font-size: 2.5rem;
-  font-family: 'Playfair Display', serif;
-  color: #003366;
-  margin-bottom: 1rem;
-  line-height: 1.3;
-}
-
-.tagline {
-  font-size: 1.25rem;
-  color: #555;
-  margin-bottom: 2rem;
-}
-
-.cta-button {
-  display: inline-block;
-  background-color: #0077cc;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #005fa3;
-}
-
-.intro p {
-  font-size: 1.1rem;
-  color: #333;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-/* === TESTIMONIALS === */
-.testimonials {
-  text-align: center;
-  padding: 4rem 2rem;
-  background: #f8f9fa; /* soft background */
-}
-
-.testimonials h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #333;
-}
-
-.testimonial-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem; /* spacing between cards */
-}
-
-.testimonial {
-  background: #ffffff;
-  border-radius: 1rem;
-  padding: 2rem;
-  max-width: 300px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.testimonial:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
-}
-
-.testimonial p {
-  font-style: italic;
-  color: #444;
-  margin-bottom: 1rem;
-  line-height: 1.5;
-}
-
-.testimonial span {
-  display: block;
-  font-weight: bold;
-  color: #0077b6; /* accent color */
-  margin-top: 0.5rem;
-}
-
-.portfolio h2,
-.productlines h2 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-}
-
-.testimonial-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.testimonial-button {
-  text-decoration: none;
-  flex: 1 1 300px;
-  transition: transform 0.3s ease;
-}
-
-.testimonial-button:hover {
-  transform: scale(1.02);
-}
-
-.testimonial {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.testimonial-logo {
-  width: 50px;
-  height: auto;
+  .dnd-button,
+  .pls-button {
+    max-width: 100%;
+  }
 }
