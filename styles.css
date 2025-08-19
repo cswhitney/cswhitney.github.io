@@ -330,3 +330,41 @@ footer {
   color: #0077b6; /* accent color */
   margin-top: 0.5rem;
 }
+
+.portfolio h2,
+.productlines h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.testimonial-button {
+  text-decoration: none;
+  flex: 1 1 300px;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-button:hover {
+  transform: scale(1.02);
+}
+
+.testimonial {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.testimonial-logo {
+  width: 50px;
+  height: auto;
+}
