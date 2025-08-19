@@ -89,5 +89,15 @@
       loadMarkdown('assets/Modeling.txt', 'modeling-text');
     });
   </script>
+
+    <!-- Highlight active nav link -->
+  <script>
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    document.querySelectorAll("nav a").forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  </script>
 </body>
 </html>
