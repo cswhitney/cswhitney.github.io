@@ -164,6 +164,25 @@ nav a.active {
   text-align: left;
 }
 
+/* === CONTACT PAGE BACKGROUND LINE DRAWING === */
+.contact-page::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: translateY(-50%);
+  background-image: url('assets/AZ_line.png'); /* adjust path if needed */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  opacity: 0.08;
+  z-index: -1;
+  pointer-events: none;
+}
+
+
 /* === PORTFOLIO PAGE === */
 .portfolio-container {
   padding: 2rem 1rem;
