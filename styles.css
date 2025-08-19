@@ -227,3 +227,73 @@ footer {
   margin-left: 1.5rem;
   margin-bottom: 1rem;
 }
+
+/* === .Portfolio Buttons === */
+
+/* === PORTFOLIO CARDS SECTION === */
+.portfolio_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.portfolio_cards .card-link {
+  flex: 1 1 300px;
+  max-width: 350px;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.portfolio_cards .card-link:hover {
+  transform: scale(1.02);
+}
+
+/* === CARD BOX === */
+.portfolio_cards .card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  height: 100%;
+}
+
+/* === LOGO STYLING === */
+.portfolio_cards .logo {
+  width: 50px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* === CARD TEXT === */
+.portfolio_cards p {
+  font-style: italic;
+  color: #444;
+  line-height: 1.5;
+  font-size: 1.05rem;
+}
+
+.portfolio_cards span {
+  font-weight: bold;
+  color: #0077b6;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .portfolio_cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio_cards .card-link {
+    max-width: 100%;
+  }
+}
