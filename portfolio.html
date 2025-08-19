@@ -12,12 +12,12 @@
     <div class="header-inner">
       <h1>C.S. Whitney Engineering</h1>
       <nav>
-        <a href="/">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="research.html">Research</a>
         <a href="contact.html">Contact</a>
-        <a href="contact.html">Services</a>
+        <a href="services.html">Services</a>
       </nav>
     </div>
   </header>
@@ -37,13 +37,32 @@
         </div>
       </div>
     </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <h2>What Clients Say</h2>
+      <div class="testimonial-cards">
+        <div class="testimonial">
+          <p>"C.S. Whitney Engineering brought our vision to life with precision and creativity. Their attention to detail is unmatched!"</p>
+          <span>- Jane D., Architect</span>
+        </div>
+        <div class="testimonial">
+          <p>"Reliable, innovative, and professional. We couldn't have asked for a better engineering partner on our last project."</p>
+          <span>- Mark L., Project Manager</span>
+        </div>
+        <div class="testimonial">
+          <p>"The team went above and beyond. Communication was clear and the end result exceeded expectations."</p>
+          <span>- Sarah K., Developer</span>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 C.S. Whitney. Thoughtful Engineering Thoughtful Design.</p>
+    <p>&copy; 2025 C.S. Whitney. Thoughtful Engineering, Thoughtful Design.</p>
   </footer>
 
-    <!-- Highlight active nav link -->
+  <!-- Highlight active nav link -->
   <script>
     const currentPage = window.location.pathname.split("/").pop() || "index.html";
     document.querySelectorAll("nav a").forEach(link => {
@@ -53,5 +72,4 @@
     });
   </script>
 </body>
-
 </html>
