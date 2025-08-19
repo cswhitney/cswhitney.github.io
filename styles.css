@@ -340,19 +340,28 @@ footer {
 }
 
 /* === INDIVIDUAL CARD STYLES === */
+
+.card-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none; /* optional to remove underline */
+}
+
 .portfolio-card,
 .product-card {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   text-align: center;
   width: 100%;
   max-width: 350px;
+  flex-grow: 1;         /* grow to fill */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%; /* fills height from parent */
+  height: 100%;
   transition: transform 0.3s ease;
 }
 
