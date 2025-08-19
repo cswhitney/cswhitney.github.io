@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
-  <title>Contact - C.S. Whitney Engineering</title>
+  <title>Home - C.S. Whitney Engineering</title>
 </head>
 
 <body>
@@ -12,38 +12,36 @@
     <div class="header-inner">
       <h1>C.S. Whitney Engineering</h1>
       <nav>
-        <a href="/">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="research.html">Research</a>
         <a href="contact.html">Contact</a>
-        <a href="contact.html">Services</a>
+        <a href="services.html">Services</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section id="contact">
-      <div class="contact-content">
-        <div class="contact-text">
-          <h2>Contact Us</h2>
-          <p>
-            We welcome inquiries about engineering projects, partnerships, and collaborations.
-            Please use the form below or reach out via email.
-          </p>
-        </div>
-        <div class="contact-image">
-          <img src="your-image.jpg" alt="Engineering concept" />
-        </div>
-      </div>
+  <main class="home-container">
+    <section class="hero">
+      <h2 class="slogan">Thoughtful Engineering,<br>Thoughtful Design.</h2>
+      <p class="tagline">Innovative solutions built on precision and purpose.</p>
+      <a href="portfolio.html" class="cta-button">View Portfolio</a>
+    </section>
+
+    <section class="intro">
+      <p>
+        Welcome to C.S. Whitney Engineering — where ideas take form through rigorous design,
+        collaborative problem-solving, and a passion for engineering excellence.
+      </p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 C.S. Whitney. Thoughtful Engineering Thoughtful Design.</p>
+    <p>&copy; 2025 C.S. Whitney. Thoughtful Engineering, Thoughtful Design.</p>
   </footer>
 
-    <!-- Highlight active nav link -->
+  <!-- Highlight active nav link -->
   <script>
     const currentPage = window.location.pathname.split("/").pop() || "index.html";
     document.querySelectorAll("nav a").forEach(link => {
@@ -53,5 +51,4 @@
     });
   </script>
 </body>
-
 </html>
