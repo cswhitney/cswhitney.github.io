@@ -83,10 +83,15 @@ nav a.active {
 
 /* === HOME PAGE HERO === */
 .home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;      /* Center content vertically */
+  align-items: center;          /* Center content horizontally */
   flex: 1;
   max-width: 900px;
-  margin: 3rem auto 4rem;
-  padding: 0 1rem;
+  margin: 0 auto;               /* Remove margin that was pushing it down */
+  padding: 2rem 1rem;
+  min-height: 100vh;            /* Take full viewport height */
   text-align: center;
 }
 
@@ -110,7 +115,7 @@ nav a.active {
 
 .cta-button {
   display: inline-block;
-  background-color: #0077cc;
+  background-color: #a1a1a1;
   color: #fff;
   padding: 0.75rem 2rem;
   font-weight: 600;
