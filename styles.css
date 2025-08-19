@@ -241,6 +241,12 @@ nav a.active {
   margin-bottom: 2rem;
 }
 
+.card-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 /* === FOOTER === */
 footer {
   background-color: #f4f4f4;
@@ -322,18 +328,18 @@ footer {
   margin-bottom: 1rem;
 }
 
-/* === PORTFOLIO & PRODUCT CARDS === */
-/* === PORTFOLIO CARDS GRID === */
+/* === CARD CONTAINER GRIDS === */
 .portfolio_cards,
 .productline_cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: stretch; /* ensures equal height */
   gap: 2rem;
   margin-bottom: 3rem;
 }
 
-/* === INDIVIDUAL CARD === */
+/* === INDIVIDUAL CARD STYLES === */
 .portfolio-card,
 .product-card {
   background-color: #ffffff;
@@ -345,16 +351,12 @@ footer {
   max-width: 350px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  height: 100%; /* fills height from parent */
   transition: transform 0.3s ease;
 }
 
-.card-link:hover .portfolio-card,
-.card-link:hover .product-card {
-  transform: scale(1.02);
-}
-
-/* === LOGO IMAGE === */
+/* === LOGO IMAGES === */
 .card-logo {
   width: 50px;
   height: auto;
