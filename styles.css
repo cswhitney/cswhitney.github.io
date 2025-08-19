@@ -328,65 +328,7 @@ footer {
   margin-bottom: 1rem;
 }
 
-/* === CARD CONTAINER GRIDS === */
-.portfolio_cards,
-.productline_cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch; /* ensures equal height */
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
 
-/* === INDIVIDUAL CARD STYLES === */
-
-.card-link {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  text-decoration: none; /* optional to remove underline */
-}
-
-.portfolio-card,
-.product-card {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  text-align: center;
-  width: 100%;
-  max-width: 350px;
-  flex-grow: 1;         /* grow to fill */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  transition: transform 0.3s ease;
-}
-
-/* === LOGO IMAGES === */
-.card-logo {
-  width: 50px;
-  height: auto;
-  margin-bottom: 1rem;
-}
-
-/* === CARD TEXT === */
-.portfolio-card p,
-.product-card p {
-  font-style: italic;
-  color: #444;
-  line-height: 1.5;
-  font-size: 1.05rem;
-  margin-bottom: 0.5rem;
-}
-
-.portfolio-card span,
-.product-card span {
-  font-weight: bold;
-  color: #333;
-}
 
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
@@ -395,12 +337,37 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-
-  .portfolio-card,
-  .product-card {
-    max-width: 90%;
-  }
+  
+  .card-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
 }
+
+.portfolio-card,
+.product-card {
+  flex: 1 1 300px;       /* grow, shrink, basis for flexibility */
+  max-width: 350px;      /* max width to keep cards consistent */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;          /* stretch to fill container height */
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+/* Optional: make sure images don’t shrink */
+.card-logo {
+  width: 50px;
+  height: auto;
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+
+
 
 /* === CONSULTING SERVICES SECTION === */
 .consulting-services {
