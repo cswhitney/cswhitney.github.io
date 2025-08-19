@@ -80,6 +80,58 @@ nav a.active {
   padding: 0 1rem;
 }
 
+
+/* === HOME PAGE HERO === */
+.home-container {
+  flex: 1;
+  max-width: 900px;
+  margin: 3rem auto 4rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.hero {
+  margin-bottom: 2rem;
+}
+
+.slogan {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #003366;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-size: 1.25rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #0077cc;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #005fa3;
+  cursor: pointer;
+}
+
+/* === HOME PAGE INTRO === */
+.intro {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
 /* === CONTACT PAGE === */
 .contact-page {
   display: flex;
