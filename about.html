@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
   <title>Contact - C.S. Whitney Engineering</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
@@ -26,64 +28,14 @@
       
       <!-- Image on the Left -->
       <div class="contact-image" style="flex: 0 0 300px; text-align: center;">
-        <img src="assets/family.jpg" alt="Engineering concept" style="width: 100%; max-width: 300px; height: auto; border-radius: 8px;" />
+        <img src="assets/family2.jpg" alt="Engineering concept" style="width: 100%; max-width: 300px; height: auto; border-radius: 8px;" />
       </div>
       <!-- Text Section -->
 <div class="contact-text" style="flex: 1; text-align: justify;">
-  <h2>About Me:</h2>
-  <p>
-    My name is Chris Whitney, and I am a Research Engineer, Designer, and Builder with a diverse set of experiences that have shaped me into a dynamic, thoughtful, and innovative professional.
-  </p>
-
-  <br>
-
-  <p>
-    My career began in project management, where I specialized in on-site customer relations and quality control. Straight out of high school, I joined a growing company and quickly worked my way from on-site labor to managing full project implementation—from contract to completion. This role gave me the unique opportunity to collaborate with clients throughout the entire process—from model room discussions and hardware prototypes to final installation and quality assurance.
-  </p>
-
-  <br>
-
-  <p>
-    I personally oversaw production capacity by conducting global on-site facility inspections and addressed installation challenges in real time. My focus was always on improving customer experience while identifying opportunities to reduce unnecessary costs and streamline operations.
-  </p>
-
-  <br>
-
-  <p>
-    As I grew professionally, I developed a passion for engineering and design. Motivated by the desire to create impactful solutions and expand my capabilities, I returned to academia to build a solid foundation in research and applied science.
-  </p>
-
-  <br>
-
-  <p>
-    During my academic journey, I cultivated deep expertise in research engineering, particularly in applying the scientific method to solve complex, interdisciplinary challenges. My work explored multiscale systems—starting at the molecular level and scaling to full systems design. As an experimental purist, I built a robust portfolio in computational modeling, including molecular dynamics, quantum chemistry, computational fluid dynamics (CFD), and finite element analysis (FEA). This allowed me to simulate and study fluid–solid interactions where both domains are intrinsically coupled, giving me insight into dynamic system responses.
-  </p>
-
-  <br>
-
-  <p>
-    While in academia, I remained active in industry through freelance and consulting work. My consulting focused on product development and bridging the knowledge gap between non-technical stakeholders and engineering teams. I believe this intersection—where innovation meets communication—is where significant value is created.
-  </p>
-
-  <br>
-
-  <p>
-    One of the most overlooked challenges in engineering is translating complex technological ideas into actionable plans for non-technical partners. My ability to communicate across disciplines and align business and engineering objectives has consistently driven project efficiency, improved outcomes, and accelerated product development cycles.
-  </p>
-
-  <br>
-
-  <h3>Looking Ahead:</h3>
-  <p>
-    I’m excited to bring my interdisciplinary expertise to future projects where innovation, clarity, and collaboration are key. I aim to support companies by integrating research-driven engineering with real-world implementation—delivering solutions that are not only technically sound but also strategically aligned with business goals.
-  </p>
-
-  <br>
-
-  <p>
-    Whether it’s driving early-stage innovation, refining product design, or translating scientific insights into scalable systems, I’m passionate about helping companies succeed through thoughtful design, rigorous engineering, and clear communication. Let's build what's next—together.
-  </p>
-</div>
+   <h2>Research</h2>
+      <div id="research-text" class="section-text markdown-body">
+        Loading intro...
+      </div>
     </div>
   </section>
 
@@ -121,6 +73,27 @@
   <footer>
     <p>&copy; 2025 C.S. Whitney. Thoughtful Engineering Thoughtful Design.</p>
   </footer>
+
+   <script>
+    function loadMarkdown(url, elementId) {
+      fetch(url)
+        .then(response => {
+          if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+          return response.text();
+        })
+        .then(data => {
+          document.getElementById(elementId).innerHTML = marked.parse(data);
+        })
+        .catch(error => {
+          console.error('Error loading markdown:', error);
+          document.getElementById(elementId).innerText = 'Failed to load content.';
+        });
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      loadMarkdown('assets/Research_Intro.txt', 'aboutme-text');
+    });
+  </script>
 </body>
 
 </html>

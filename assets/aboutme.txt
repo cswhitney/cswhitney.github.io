@@ -1,0 +1,24 @@
+<h3>Chris Whitney – Research Engineer | Designer | Builder<\h3>
+
+My name is Chris Whitney, and I am a Research Engineer, Designer, and Builder with a diverse set of experiences that have shaped me into a dynamic, thoughtful, and innovative professional.
+
+My career began in project management, where I specialized in on-site customer relations and quality control. Straight out of high school, I joined a growing company and quickly worked my way up from on-site labor to managing full project implementation—from contract to completion. This role gave me the unique opportunity to collaborate with clients throughout the entire process, from model room discussions and hardware prototypes to final installation and quality assurance.
+
+I personally oversaw production capacity by conducting global on-site facility inspections and addressed installation challenges in real time. My focus was always on improving the customer experience while identifying opportunities to reduce costs and streamline operations.
+
+As I grew professionally, I developed a passion for engineering and design. Motivated by the desire to create impactful solutions and expand my capabilities, I returned to academia to build a strong foundation in research and applied science.
+
+During my academic journey, I developed deep expertise in research engineering, particularly in applying the scientific method to solve complex, interdisciplinary challenges. My work has spanned multiscale systems—beginning at the molecular level and scaling to full systems design. As an experimental purist, I believe that relevant outcomes are most meaningfully captured through a robust experimental framework. However, the rise of advanced computational simulation has allowed us to close critical knowledge gaps, and I’ve made this a foundational aspect of my work. I've built a strong portfolio in computational modeling, including molecular dynamics, quantum chemistry, computational fluid dynamics (CFD), and finite element analysis (FEA). These tools have enabled me to simulate and study fluid–solid interactions where both domains are intrinsically coupled, offering insight into dynamic system responses.
+
+In addition to my research and modeling work, I also had the opportunity to teach courses in Computer-Aided Engineering (CAE), with a significant emphasis on solid modeling. I’ve found that moving from concept to model is one of the most critical phases in product development. Solid modeling enables not only visualization but also spatial validation—bridging the gap between abstract ideas and tangible designs. This step is foundational for identifying potential design challenges early and ensuring that products are both manufacturable and functionally sound.
+
+While in academia, I remained active in industry through freelance and consulting work. My consulting focused on product development and bridging the gap between non-technical stakeholders and engineering teams. I believe this intersection—where innovation meets communication—is where the most meaningful progress happens.
+
+One of the most overlooked challenges in engineering is translating complex technological ideas into actionable plans for non-technical partners. My ability to communicate across disciplines and align business and engineering objectives has consistently driven project efficiency, improved outcomes, and accelerated product development cycles.
+
+<h3>Looking Ahead:<\h3>
+I’m excited to bring my interdisciplinary expertise to future projects where innovation, clarity, and collaboration are key. I aim to support companies by integrating research-driven engineering with real-world implementation—delivering solutions that are not only technically sound but also strategically aligned with business goals.
+
+Whether it’s driving early-stage innovation, refining product design, or translating scientific insights into scalable systems, I’m passionate about helping companies succeed through thoughtful design, rigorous engineering, and clear communication.
+
+Let’s build what’s next—together.
