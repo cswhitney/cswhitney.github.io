@@ -164,16 +164,15 @@ nav a.active {
   text-align: left;
 }
 
-/* === CONTACT PAGE BACKGROUND LINE DRAWING === */
 .contact-page::before {
   content: "";
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 100vh;
   transform: translateY(-50%);
-  background-image: url('assets/AZ_line.png'); /* adjust path if needed */
+  background-image: url('../assets/AZ_line.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -181,7 +180,6 @@ nav a.active {
   z-index: -1;
   pointer-events: none;
 }
-
 
 /* === PORTFOLIO PAGE === */
 .portfolio-container {
