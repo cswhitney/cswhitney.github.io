@@ -116,6 +116,7 @@ nav a.active {
   font-weight: 600;
   border-radius: 8px;
   transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .cta-button:hover {
@@ -123,7 +124,6 @@ nav a.active {
   cursor: pointer;
 }
 
-/* === HOME PAGE INTRO === */
 .intro {
   font-size: 1.1rem;
   color: #333;
