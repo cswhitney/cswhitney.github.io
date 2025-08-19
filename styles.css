@@ -166,7 +166,6 @@ nav a.active {
   position: relative;
   flex: 1;
   display: flex;
-
   min-height: 80vh;
   background-color: transparent;
   /* background-color: transparent; */
