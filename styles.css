@@ -168,7 +168,7 @@ nav a.active {
   display: flex;
 
   min-height: 80vh;
-  background-color: rgba(0, 255, 0, 0.2); /* TEMP for testing */
+  background-color: transparent;
   /* background-color: transparent; */
 }
 
