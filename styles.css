@@ -134,6 +134,7 @@ nav a.active {
 
 /* === CONTACT PAGE === */
 .contact-page {
+  position: relative; /* Needed for ::before to position absolutely */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,11 +169,11 @@ nav a.active {
   content: "";
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 50%;
   width: 100%;
-  height: auto;
-  transform: translateY(-50%);
-  background-image: url('assets/AZ_line.png');
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background-image: url('assets/AZ_line.png'); /* check the path */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
