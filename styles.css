@@ -186,3 +186,54 @@ footer {
     max-width: 100%;
   }
 }
+
+/* === RESEARCH CARDS === */
+.horizontal-research {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.research-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: #000;
+}
+
+.research-card:hover {
+  transform: scale(1.03);
+}
+
+.research-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.research-card h3 {
+  font-size: 1.2rem;
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.research-card p {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Markdown body (optional style for fetched .txt) */
+.markdown-body {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.6;
+  padding: 1rem;
+}
