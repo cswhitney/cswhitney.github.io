@@ -231,6 +231,10 @@ nav a.active {
   transform: translateY(-5px);
 }
 
+.portfolio h2 {
+  text-align: center;
+}
+
 /* === FOOTER === */
 footer {
   background-color: #f4f4f4;
