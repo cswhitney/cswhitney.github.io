@@ -163,25 +163,20 @@ footer {
 
 .horizontal-research {
   display: flex;
+  flex-direction: row;       /* ← ensures horizontal layout */
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px; /* Space between cards */
+  align-items: flex-start;
+  gap: 20px;
   margin-top: 2rem;
   padding: 0 1rem;
 }
 
-.research-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 250px; /* Control the card size */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1rem;
-  text-decoration: none;
-  background-color: #f9f9f9;
-  transition: transform 0.2s, box-shadow 0.2s;
+.research-card img {
+  width: 100%;
+  height: auto;
+  max-height: 160px; /* Add this line */
+  object-fit: cover;
 }
 
 .research-card img {
