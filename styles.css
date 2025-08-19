@@ -233,8 +233,13 @@ nav a.active {
 
 .portfolio h2 {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
+.productlines h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
 /* === FOOTER === */
 footer {
   background-color: #f4f4f4;
