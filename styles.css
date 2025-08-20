@@ -449,7 +449,7 @@ footer {
   display: flex;
   justify-content: center; /* center horizontally */
   align-items: center;     /* align vertically if parent has height */
-  gap: 1.5rem;             /* space between buttons */
+  gap: 0.5rem;             /* space between buttons */
   margin-top: 2rem;        /* optional spacing */
   flex-wrap: wrap;         /* ✅ makes buttons wrap on small screens */
 }
