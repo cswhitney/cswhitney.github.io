@@ -92,7 +92,7 @@ nav a.active {
   max-width: 900px;
   margin: 0 auto;               /* Remove margin that was pushing it down */
   padding: 2rem 1rem;
-  min-height: 100vh;            /* Take full viewport height */
+  height: 100vh;            /* Take full viewport height */
   text-align: center;
 }
 
