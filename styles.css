@@ -441,9 +441,11 @@ footer {
   }
 }
 
-/* === About me Buttons === */
+/* === About Me Buttons === */
 .cta-button {
-  display: block;          /* or flex */
+  display: inline-flex;        /* Use inline-flex for proper button behavior */
+  align-items: center;         /* Vertically center content */
+  justify-content: center;     /* Horizontally center text */
   background-color: #a1a1a1;
   color: #fff;
   padding: 0.75rem 2rem;
@@ -451,9 +453,9 @@ footer {
   border-radius: 8px;
   transition: background-color 0.3s ease;
   text-decoration: none;
-  margin: 0 auto;          /* centers horizontally */
-  text-align: center;      /* centers text inside */
-  max-width: fit-content;  /* keeps button tight */
+  margin: 0 auto;              /* Centers button when parent has text-align: center */
+  text-align: center;
+  max-width: fit-content;
 }
 
 .cta-button:hover {
