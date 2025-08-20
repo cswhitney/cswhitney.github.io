@@ -443,7 +443,7 @@ footer {
 
 /* === About me Buttons === */
 .cta-button {
-  display: inline-block;
+  display: block;          /* or flex */
   background-color: #a1a1a1;
   color: #fff;
   padding: 0.75rem 2rem;
@@ -451,7 +451,9 @@ footer {
   border-radius: 8px;
   transition: background-color 0.3s ease;
   text-decoration: none;
-  align-items: center;
+  margin: 0 auto;          /* centers horizontally */
+  text-align: center;      /* centers text inside */
+  max-width: fit-content;  /* keeps button tight */
 }
 
 .cta-button:hover {
