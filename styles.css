@@ -451,12 +451,13 @@ footer {
   align-items: center;     /* align vertically if parent has height */
   gap: 1.5rem;             /* space between buttons */
   margin-top: 2rem;        /* optional spacing */
+  flex-wrap: wrap;         /* ✅ makes buttons wrap on small screens */
 }
 
 .cta-button {
-  display: inline-flex;         /* flex container for content */
-  align-items: center;          /* vertically center content */
-  justify-content: center;      /* horizontally center text */
+  display: inline-flex;        /* flex container for content */
+  align-items: center;         /* vertically center content */
+  justify-content: center;     /* horizontally center text */
   background-color: #a1a1a1;
   color: #fff;
   padding: 0.75rem 2rem;
@@ -464,9 +465,8 @@ footer {
   border-radius: 8px;
   transition: background-color 0.3s ease;
   text-decoration: none;
-  margin: 0 auto;               /* centers the button itself */
-  text-align: center;           /* ensures text is centered inside */
-  width: fit-content;           /* button shrinks to text width */
+  text-align: center;          /* keeps text centered inside */
+  width: fit-content;          /* button shrinks to text width */
 }
 
 .cta-button:hover {
