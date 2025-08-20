@@ -456,7 +456,8 @@ footer {
 }
 
 .cta-button {
-  display: inline-flex;        /* flex container for content */
+  display: flex;        /* flex container for content */
+  flex-direction: column;
   align-items: center;         /* vertically center content */
   justify-content: center;     /* horizontally center text */
   background-color: #a1a1a1;
