@@ -329,12 +329,23 @@ footer {
   margin-bottom: 1rem;
 }
 
+/* Parent container */
+.portfolio_cards,
+.productline_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
 
+/* Each card */
 .portfolio-card,
 .product-card {
+  width: 250px;
+  height: 250px; /* square shape */
   background-color: #0077cc;
   color: #fff;
-  padding: 1.25rem 2rem;
+  padding: 1.25rem;
   border-radius: 10px;
   font-weight: bold;
   text-align: center;
@@ -345,11 +356,6 @@ footer {
   justify-content: center;
 }
 
-.portfolio-card:hover,
-.product-card:hover {
-  background-color: #005fa3;
-  cursor: pointer;
-}
 
 /* === CONSULTING SERVICES SECTION === */
 .consulting-services {
