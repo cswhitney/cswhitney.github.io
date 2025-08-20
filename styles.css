@@ -126,7 +126,7 @@ nav a.active {
 }
 
 .cta-button:hover {
-  background-color: #005fa3;
+  background-color: #a1a1a1;
   cursor: pointer;
 }
 
@@ -379,7 +379,7 @@ footer {
 }
 
 .consulting-card:hover {
-  background-color: #005fa3;
+  background-color: #a1a1a1;
   cursor: pointer;
 }
 
