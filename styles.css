@@ -447,11 +447,12 @@ footer {
 /* === About Me Buttons === */
 .cta-container {
   display: flex;
-  justify-content: center; /* center horizontally */
-  align-items: center;     /* align vertically if parent has height */
-  gap: 0.5rem;             /* space between buttons */
-  margin-top: 2rem;        /* optional spacing */
-  flex-wrap: wrap;         /* ✅ makes buttons wrap on small screens */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;   /* less horizontal gap */
+  margin-top: 2rem;
+  max-width: 100%;       /* prevents overflow */
 }
 
 .cta-button {
