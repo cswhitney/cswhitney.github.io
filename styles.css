@@ -449,10 +449,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 0.5rem 0.75rem;   /* less horizontal gap */
+  gap: 0.5rem;   /* was 1.5rem — try 0.5rem for closer buttons */
   margin-top: 2rem;
-  max-width: 100%;       /* prevents overflow */
+  flex-wrap: wrap;
 }
 
 .cta-button {
