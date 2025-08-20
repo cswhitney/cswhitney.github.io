@@ -336,7 +336,6 @@ footer {
     align-items: center;
   }
 
-  /* You don't need to redefine .card-link here if it doesn't change */
 
   .portfolio-card,
   .product-card {
