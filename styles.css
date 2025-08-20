@@ -443,32 +443,29 @@ footer {
     max-width: 90%;
   }
 }
-
 /* === About Me Buttons === */
 .cta-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;   /* was 1.5rem — try 0.5rem for closer buttons */
+  gap: 0.5rem;   /* tighter spacing between buttons */
   margin-top: 2rem;
   flex-wrap: wrap;
 }
 
 .cta-button {
-  display: flex;        /* flex container for content */
-  flex-direction: column;
-  align-items: center;         /* vertically center content */
+  display: inline-flex;        /* keeps button sizing neat */
+  align-items: center;         /* vertically center text */
   justify-content: center;     /* horizontally center text */
   background-color: #a1a1a1;
   color: #fff;
-  padding: 0.75rem 2rem;
+  padding: 0.75rem 1.5rem;     /* slightly slimmer padding */
   font-weight: 600;
   border-radius: 8px;
   transition: background-color 0.3s ease;
-  margin: 0 auto;      /* centers horizontally */
   text-decoration: none;
-  text-align: center;          /* keeps text centered inside */
-  width: fit-content;          /* button shrinks to text width */
+  text-align: center;
+  width: fit-content;
 }
 
 .cta-button:hover {
