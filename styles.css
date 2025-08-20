@@ -451,6 +451,7 @@ footer {
   border-radius: 8px;
   transition: background-color 0.3s ease;
   text-decoration: none;
+  align-items: center;
 }
 
 .cta-button:hover {
