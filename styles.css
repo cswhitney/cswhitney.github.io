@@ -267,45 +267,30 @@ footer {
 }
 
 .horizontal-research {
-  display: flex;
-  flex-direction: row;       /* ← ensures horizontal layout */
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 20px;
-  margin-top: 2rem;
-  padding: 0 1rem;
+  gap: 30px;              /* bigger spacing between cards */
+  padding: 0 2rem;        /* more breathing room */
+}
+
+.research-card {
+  flex: 1 1 300px;        /* minimum width = 300px, scales up */
+  max-width: 400px;       /* cap so they don’t stretch too far */
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .research-card img {
-  width: 100%;
-  height: auto;
-  max-height: 160px; /* Add this line */
-  object-fit: cover;
-}
-
-.research-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-  margin-bottom: 1rem;
+  max-height: 240px;      /* bigger images */
+  border-radius: 8px;
 }
 
 .research-card h3 {
-  margin: 0.5rem 0 0.2rem;
+  font-size: 1.4rem;      /* larger title */
 }
 
 .research-card p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #555;
+  font-size: 1rem;        /* bump text size */
 }
-
-.research-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
 /* === .TXT Handling === */
 .markdown-body {
   text-align: justify;
