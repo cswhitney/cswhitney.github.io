@@ -249,7 +249,23 @@ nav a.active {
 .card-link {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 300px;         /* Set width of the button box */
+  height: 250px;        /* Set height of the button box */
+  padding: 16px;        /* Optional padding */
+  box-sizing: border-box;
+  text-align: center;   /* Center text and inline elements */
+  border: 1px solid #ccc; /* Optional: for button-like border */
+  border-radius: 8px;   /* Optional: rounded corners */
+  background-color: #fff; /* Or any background */
+  cursor: pointer;
+}
+
+.card-link img {
+  max-width: 100%;
+  max-height: 100px;    /* Adjust to fit proportionally */
+  object-fit: contain;
 }
 
 /* === FOOTER === */
