@@ -358,11 +358,10 @@ footer {
   gap: 1.5rem;
 }
 
-/* Each card */
 .portfolio-card,
 .product-card {
   width: 250px;
-  height: 250px; /* square shape */
+  height: 250px;
   background-color: #ffffff;
   color: #fff;
   padding: 1.25rem;
@@ -375,7 +374,6 @@ footer {
   align-items: center;
   justify-content: center;
 }
-
 
 /* === CONSULTING SERVICES SECTION === */
 .consulting-services {
