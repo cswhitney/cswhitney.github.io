@@ -6,13 +6,14 @@
   <link rel="stylesheet" href="styles.css" />
   <title>Home - C.S. Whitney Engineering</title>
 
-  <!-- Add model-viewer from CDN -->
+  <!-- Google Model Viewer (CDN) -->
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      background-color: #fff;
     }
 
     header {
@@ -52,19 +53,13 @@
       max-width: 800px;
       height: 500px;
       margin: 0 auto 30px auto;
-      border: 1px solid #ccc;
-      border-radius: 10px;
+      background-color: transparent;
+      border: none;
     }
 
     .slogan {
       font-size: 2rem;
       margin-bottom: 10px;
-    }
-
-    .tagline {
-      font-size: 1.2rem;
-      color: #555;
-      margin-bottom: 20px;
     }
 
     .cta-button {
@@ -100,7 +95,7 @@
 
   <main class="home-container">
     <section class="hero">
-      <!-- 3D Model Viewer: replace the src with your actual file -->
+      <!-- ✅ 3D Model Viewer -->
       <model-viewer src="assets/system-Compound.gltf"
                     alt="3D Engineering Model"
                     auto-rotate
@@ -108,7 +103,8 @@
                     ar
                     shadow-intensity="1"
                     environment-image="neutral"
-                    exposure="1">
+                    exposure="1"
+                    style="background-color: transparent;">
       </model-viewer>
 
       <h2 class="slogan">Fully Modular Nib Based Applicator</h2>
@@ -121,7 +117,7 @@
     <p>&copy; 2025 C.S. Whitney. Thoughtful Engineering, Thoughtful Design.</p>
   </footer>
 
-  <!-- Highlight active nav link -->
+  <!-- 🔍 Highlight active nav link -->
   <script>
     const currentPage = window.location.pathname.split("/").pop() || "index.html";
     document.querySelectorAll("nav a").forEach(link => {
