@@ -5,8 +5,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
   <title>Home - C.S. Whitney Engineering</title>
+
+  <!-- Add model-viewer from CDN -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #f5f5f5;
+      padding: 10px 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .card-logo {
+      height: 50px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 8px 12px;
+    }
+
+    nav a.active {
+      color: #007BFF;
+    }
+
+    .home-container {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    model-viewer {
+      width: 100%;
+      max-width: 800px;
+      height: 500px;
+      margin: 0 auto 30px auto;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    .slogan {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #f5f5f5;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
 </head>
- 
+
 <body>
   <header>
     <div class="header-inner">
@@ -19,6 +100,17 @@
 
   <main class="home-container">
     <section class="hero">
+      <!-- 3D Model Viewer: replace the src with your actual file -->
+      <model-viewer src="models/your-model.gltf"
+                    alt="3D Engineering Model"
+                    auto-rotate
+                    camera-controls
+                    ar
+                    shadow-intensity="1"
+                    environment-image="neutral"
+                    exposure="1">
+      </model-viewer>
+
       <h2 class="slogan">Thoughtful Engineering,<br>Thoughtful Design.</h2>
       <p class="tagline">The Intersection of Collaboration, Innovation, Ingenuity, and Purpose.</p>
       <a href="portfolio.html" class="cta-button">View Portfolio</a>
