@@ -19,7 +19,7 @@ html, body {
 
 /* Main content grows to fill space */
 main {
-  flex: 1;
+  flex: 1 0 auto;  /* grow, shrink, auto */
   width: 90%;           /* optional: page width */
   max-width: 1200px;    /* optional */
   margin: 0 auto;       /* centers main content horizontally */
