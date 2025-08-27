@@ -3,8 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="global.css" />
   <title>Contact - C.S. Whitney Engineering</title>
+
+  <!-- Page-specific styles -->
+  <style>
+    .productlines {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .productline_cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .product-card {
+      background: #f9f9f9;
+      border-radius: 8px;
+      padding: 1rem;
+      width: 220px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    .card-logo {
+      max-width: 100%;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 0.75rem;
+    }
+
+    .product-card p {
+      font-weight: 600;
+      margin: 0.5rem 0;
+    }
+
+    .product-card span {
+      display: block;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
 </head>
 
 <body>
@@ -22,30 +75,28 @@
     </div>
   </header>
 
-    <!-- Second Row: Product Lines -->
-    <section class="productlines">
-      <h2>Product Lines</h2>
-      <div class="productline_cards">
+  <!-- Product Lines -->
+  <section class="productlines">
+    <h2>Product Lines</h2>
+    <div class="productline_cards">
 
-        <a class="card-link" href="nibTech.html">
-          <div class="product-card">
-            <img src="assets/nibTech.png" alt="Logo 3" class="card-logo">
-            <p>"VersiNib"</p>
-          </div>
-        </a>
+      <a class="card-link" href="nibTech.html">
+        <div class="product-card">
+          <img src="assets/nibTech.png" alt="Logo 3" class="card-logo">
+          <p>"VersiNib"</p>
+        </div>
+      </a>
 
-        <a class="card-link" href="product2.html">
-          <div class="product-card">
-            <img src="logo4.png" alt="Logo 4" class="card-logo">
-            <p>"Modular ....."</p>
-            <span>- Coming Soon</span>
-          </div>
-        </a>
+      <a class="card-link" href="product2.html">
+        <div class="product-card">
+          <img src="logo4.png" alt="Logo 4" class="card-logo">
+          <p>"Modular ....."</p>
+          <span>- Coming Soon</span>
+        </div>
+      </a>
 
-      </div>
-    </section>
-
-  </main>
+    </div>
+  </section>
 
   <footer>
     <p>&copy; 2025 C.S. Whitney. Thoughtful Engineering, Thoughtful Design.</p>

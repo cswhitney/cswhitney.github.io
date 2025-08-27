@@ -3,10 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="global.css" />
   <title>Contact - C.S. Whitney Engineering</title>
-
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <!-- Contact Page Specific Styles -->
+  <style>
+    .contact-content {
+      text-align: justify;
+      position: relative;
+    }
+
+    .contact-content img {
+      float: left;
+      width: 300px;
+      height: auto;
+      border-radius: 8px;
+      margin: 1.5rem 1.5rem 1rem 0;
+    }
+
+    /* CTA buttons */
+    .cta-container {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 0.75rem 1.25rem;
+      background-color: #003366;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.2s ease;
+    }
+    .cta-button:hover {
+      background-color: #0055aa;
+    }
+
+    /* Image row section */
+    .image-row {
+      margin-top: 3rem;
+    }
+    .image-row .image-group {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .image-row .image-group > div {
+      flex: 1;
+      text-align: center;
+      min-width: 200px;
+    }
+    .image-row img {
+      width: 100%;
+      max-width: 400px;
+      height: 300px;
+      object-fit: cover;
+      object-position: center center;
+      border-radius: 6px;
+    }
+  </style>
 </head>
 
 <body>
@@ -24,71 +84,59 @@
     </div>
   </header>
 
-<main class="container">
-  <section id="contact">
+  <main class="container">
+    <section id="contact">
+      <div class="contact-content">
+        <!-- Image inset into text -->
+        <img src="assets/family3.jpg" alt="Engineering concept" />
 
-    <div class="contact-content" style="text-align: justify; position: relative;">
-      <!-- Image Inset into Text -->
-      <img src="assets/family3.jpg" 
-     alt="Engineering concept" 
-     style="float: left; width: 300px; height: auto; border-radius: 8px; margin: 1.5rem 1.5rem 1rem 0;" />
-      
-      <!-- Text Content Wraps Around the Image -->
-      <div id="aboutme-text" class="section-text markdown-body">
-        Loading intro...
+        <!-- Text wraps around image -->
+        <div id="aboutme-text" class="section-text markdown-body">
+          Loading intro...
+        </div>
       </div>
-      
-    </div>
 
-              <!-- Buttons Section -->
-    <div class="cta-container">
-      <a href="https://www.linkedin.com/in/christopher-w-144461123/" target="_blank" class="cta-button";>
-        Visit LinkedIn
-      </a>
-      <a href="assets/CV_C.S.Whitney.pdf" target="_blank" class="cta-button">
-        View CV (PDF)
-      </a>
-    </div>
+      <!-- Buttons Section -->
+      <div class="cta-container">
+        <a href="https://www.linkedin.com/in/christopher-w-144461123/" target="_blank" class="cta-button">
+          Visit LinkedIn
+        </a>
+        <a href="assets/CV_C.S.Whitney.pdf" target="_blank" class="cta-button">
+          View CV (PDF)
+        </a>
+      </div>
 
       <!-- Image Row Section -->
-    <div class="image-row" style="margin-top: 3rem;">
-      <div style="display: flex; gap: 1.5rem; justify-content: space-between;flex-wrap: wrap;">
+      <div class="image-row">
+        <div class="image-group">
+          <!-- Image 1 -->
+          <div>
+            <h4>American Chemistry Society</h4>
+            <img src="assets/acs.jpg" alt="American Chemistry Society" />
+          </div>
 
-      <!-- Image 1 -->
-      <div style="flex: 1; text-align: center; min-width: 200px;">
-        <h4>American Chemistry Society</h4>
-        <img src="assets/acs.jpg" alt="American Chemistry Society" 
-            style="width: 100%; max-width: 400px; height: 300px; object-fit: cover;object-position: center center; border-radius: 6px;" />
+          <!-- Image 2 -->
+          <div>
+            <h4>American Society of Composites</h4>
+            <img src="assets/ASC.jpg" alt="American Society of Composites" />
+          </div>
+
+          <!-- Image 3 -->
+          <div>
+            <h4>NASA Glenn Research Center</h4>
+            <img src="assets/NASA.jpg" alt="NASA Glenn Research Center" />
+          </div>
+        </div>
       </div>
-
-      <!-- Image 2 -->
-      <div style="flex: 1; text-align: center; min-width: 200px;">
-        <h4>American Society of Composites</h4>
-        <img src="assets/ASC.jpg" alt="American Society of Composites" 
-            style="width: 100%; max-width: 400px; height: 300px; object-fit: cover;object-position: center center; border-radius: 6px;" />
-      </div>
-
-      <!-- Image 3 -->
-      <div style="flex: 1; text-align: center; min-width: 200px;">
-        <h4>NASA Glenn Research Center</h4>
-        <img src="assets/NASA.jpg" alt="NASA Glenn Research Center" 
-            style="width: 100%; max-width: 400px; height: 300px; object-fit: cover;object-position: center center; border-radius: 6px;" />
-      </div>
-
-      </div>
-    </div>
-
-    
-  </section>
-
-</main>
-
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 C.S. Whitney. Thoughtful Engineering, Thoughtful Design.</p>
   </footer>
 
-   <script>
+  <!-- Load Markdown -->
+  <script>
     function loadMarkdown(url, elementId) {
       fetch(url)
         .then(response => {
@@ -103,13 +151,12 @@
           document.getElementById(elementId).innerText = 'Failed to load content.';
         });
     }
-
     window.addEventListener('DOMContentLoaded', () => {
       loadMarkdown('assets/aboutme.txt', 'aboutme-text');
     });
   </script>
 
-    <!-- Highlight active nav link -->
+  <!-- Highlight active nav link -->
   <script>
     const currentPage = window.location.pathname.split("/").pop() || "index.html";
     document.querySelectorAll("nav a").forEach(link => {
@@ -119,5 +166,4 @@
     });
   </script>
 </body>
-
 </html>

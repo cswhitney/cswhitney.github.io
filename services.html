@@ -3,8 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="global.css" />
   <title>Contact - C.S. Whitney Engineering</title>
+
+  <!-- Page-specific styles -->
+  <style>
+    /* Consulting & Services */
+    .consulting-services {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .consulting-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .consulting-card {
+      background-color: #0077cc;
+      color: #fff;
+      padding: 1.25rem 2rem;
+      border-radius: 10px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      flex: 1 1 250px;
+      max-width: 300px;
+      transition: background-color 0.3s ease;
+    }
+    .consulting-card:hover {
+      background-color: #a1a1a1;
+      cursor: pointer;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      margin-top: 4rem;
+      text-align: center;
+    }
+    .testimonial-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+    .testimonial-box {
+      background-color: #ffffff;
+      padding: 2rem;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      max-width: 300px;
+      width: 100%;
+      text-align: left;
+    }
+    .testimonial-box p {
+      font-style: italic;
+      margin-bottom: 1rem;
+      color: #444;
+      font-size: 1rem;
+    }
+    .testimonial-box span {
+      font-weight: bold;
+      color: #0077b6;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .consulting-cards,
+      .testimonial-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+      .consulting-card,
+      .testimonial-box {
+        max-width: 90%;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -38,7 +116,6 @@
     <section class="testimonials">
       <h2>Academic and Industry Endorsements</h2>
       <div class="testimonial-cards">
-
         <div class="testimonial-box">
           <p>"Chris brought our vision to life with precision and creativity. Their attention to detail is unmatched!"</p>
           <span>- Jill, Principal Investigator</span>
