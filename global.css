@@ -14,11 +14,15 @@ html, body {
   margin: 0;
   display: flex;
   flex-direction: column;
+ font-family: 'Playfair Display', serif; /* main font for body text */
 }
 
-/* Main content expands */
+/* Main content grows to fill space */
 main {
   flex: 1;
+  width: 90%;           /* optional: page width */
+  max-width: 1200px;    /* optional */
+  margin: 0 auto;       /* centers main content horizontally */
 }
 
 body {
@@ -31,13 +35,13 @@ a {
   color: inherit;
 }
 
-/* === HEADER === */
+/* Header styling: centered text */
 header {
-  background-color: #f4f4f4;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  padding: 2rem 1rem 1rem;
+  padding: 1rem 0;
+  background-color: #f8f8f8; /* optional */
 }
+
 .header-inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -78,13 +82,11 @@ nav a.active {
   overflow: visible;
 }
 
-/* === FOOTER === */
+/* Footer styling: centered and at bottom */
 footer {
-  background-color: #d2d2d2;
   text-align: center;
-  padding: 20px;
-  color: #444;
-  font-size: 0.9rem;
+  padding: 1rem 0;
+  background-color: #f8f8f8; /* optional */
 }
 
 /* === UTILITIES === */
