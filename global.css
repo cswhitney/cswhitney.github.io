@@ -39,7 +39,7 @@ a {
 header {
   text-align: center;
   padding: 1rem 0;
-  background-color: #f8f8f8; /* optional */
+  background-color: #e4e4e4; /* optional */
 }
 
 .header-inner {
@@ -86,7 +86,7 @@ nav a.active {
 footer {
   text-align: center;
   padding: 1rem 0;
-  background-color: #f8f8f8; /* optional */
+  background-color: #e4e4e4; /* optional */
 }
 
 /* === UTILITIES === */
