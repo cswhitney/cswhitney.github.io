@@ -87,6 +87,7 @@ footer {
   text-align: center;
   padding: 1rem 0;
   background-color: #e4e4e4; /* optional */
+  flex-shrink: 0; /* ensures footer doesn’t shrink */
 }
 
 /* === UTILITIES === */
