@@ -80,6 +80,7 @@ nav a.active {
   margin: 2rem auto;
   padding: 0 1rem;
   overflow: visible;
+  min-height: 100vh;
 }
 
 /* Footer styling: centered and at bottom */
