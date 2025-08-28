@@ -8,6 +8,16 @@
 
   <!-- Page-specific styles -->
   <style>
+
+        .page-container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .main-content {
+      flex: 1;
+    }
     .productlines {
       padding: 2rem 1rem;
       text-align: center;
@@ -61,46 +71,48 @@
 </head>
 
 <body>
-  <header>
-    <div class="header-inner">
-      <h1>C.S. Whitney Engineering</h1>
-      <nav>
-        <a href="/">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="research.html">Research</a>
-        <a href="services.html">Services</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <div class="page-container">
+    <header>
+      <div class="header-inner">
+        <h1>C.S. Whitney Engineering</h1>
+        <nav>
+          <a href="/">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="research.html">Research</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-  <!-- Product Lines -->
-  <section class="productlines">
-    <h2>Product Lines</h2>
-    <div class="productline_cards">
+    <!-- Main content -->
+    <main class="main-content">
+      <section class="productlines">
+        <h2>Product Lines</h2>
+        <div class="productline_cards">
+          <a class="card-link" href="nibTech.html">
+            <div class="product-card">
+              <img src="assets/nibTech.png" alt="Logo 3" class="card-logo">
+              <p>"VersiNib"</p>
+            </div>
+          </a>
 
-      <a class="card-link" href="nibTech.html">
-        <div class="product-card">
-          <img src="assets/nibTech.png" alt="Logo 3" class="card-logo">
-          <p>"VersiNib"</p>
+          <a class="card-link" href="product2.html">
+            <div class="product-card">
+              <img src="logo4.png" alt="Logo 4" class="card-logo">
+              <p>"Modular ....."</p>
+              <span>- Coming Soon</span>
+            </div>
+          </a>
         </div>
-      </a>
+      </section>
+    </main>
 
-      <a class="card-link" href="product2.html">
-        <div class="product-card">
-          <img src="logo4.png" alt="Logo 4" class="card-logo">
-          <p>"Modular ....."</p>
-          <span>- Coming Soon</span>
-        </div>
-      </a>
-
-    </div>
-  </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 C.S. Whitney. Thoughtful Engineering, Thoughtful Design.</p>
-  </footer>
+    <footer>
+      <p>&copy; 2025 C.S. Whitney. Thoughtful Engineering, Thoughtful Design.</p>
+    </footer>
+  </div>
 
   <!-- Highlight active nav link -->
   <script>
@@ -112,4 +124,3 @@
     });
   </script>
 </body>
-</html>
